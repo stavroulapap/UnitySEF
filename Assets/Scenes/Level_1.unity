@@ -328,8 +328,9 @@ GameObject:
   - component: {fileID: 53033781}
   - component: {fileID: 53033780}
   - component: {fileID: 53033779}
+  - component: {fileID: 53033783}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,13 +412,26 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 761505931}
-  m_Father: {fileID: 0}
+  - {fileID: 1805185969}
+  m_Father: {fileID: 1244455342711432756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &53033783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53033778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae5c54f749da9b4a9b0e7179a39ad78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &81779768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1715,6 +1729,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e6a5b6400c721e439b3df2fdfc9460a, type: 3}
+--- !u!1 &372246465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2842282615040506813, guid: eea3ab9df66f7ad449f9877239a6607b, type: 3}
+  m_PrefabInstance: {fileID: 1244455342711432755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &378896413
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,7 +4449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -964.43, y: -483.22}
+  m_AnchoredPosition: {x: -964.07, y: -475.32}
   m_SizeDelta: {x: 10.15, y: 2.361}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761505932
@@ -5658,7 +5677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.024597168, y: -0.0012817383}
+  m_AnchoredPosition: {x: 0.00000023842, y: 0.00000047684}
   m_SizeDelta: {x: 9.482, y: 1.825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1140817803
@@ -7335,15 +7354,15 @@ RectTransform:
   m_GameObject: {fileID: 1805185968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.45895827, y: 0.45895827, z: 0.45895827}
+  m_LocalScale: {x: 1.0100871, y: 1.0100871, z: 1.0100871}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1140817802}
-  m_Father: {fileID: 1244455342711432756}
+  m_Father: {fileID: 53033782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.03, y: 1.44}
+  m_AnchoredPosition: {x: -964.404, y: -479.35004}
   m_SizeDelta: {x: 9.482, y: 1.825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805185970
@@ -8295,14 +8314,32 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 914307476678061333, guid: eea3ab9df66f7ad449f9877239a6607b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1805185969}
-    m_AddedComponents: []
+      addedObject: {fileID: 53033782}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2842282615040506813, guid: eea3ab9df66f7ad449f9877239a6607b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1244455342711432762}
   m_SourcePrefab: {fileID: 100100000, guid: eea3ab9df66f7ad449f9877239a6607b, type: 3}
 --- !u!4 &1244455342711432756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 914307476678061333, guid: eea3ab9df66f7ad449f9877239a6607b, type: 3}
   m_PrefabInstance: {fileID: 1244455342711432755}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1244455342711432762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372246465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3af3891f556854b9278efaff76b5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBarFill: {fileID: 1140817803}
+  knifeDamage: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8327,4 +8364,3 @@ SceneRoots:
   - {fileID: 412738202}
   - {fileID: 1411345773}
   - {fileID: 1250052451}
-  - {fileID: 53033782}
